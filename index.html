@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreEntrega2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Cerveza Duff.png">
+</head>
+<body>
+    <div class="container mt-2">
+        <div>
+            <h1 class=" mb-2">¡Holas! bienvenidos al Kwik-E-Mart.</h1>
+            <h2>Productos de primeras calidad.</h2>
+            <img src="img/apu.png" alt="apu" class="mb-2 mt-2">
+            <div class="gridProductos mb-2 mt-2">
+                <div class="rosquilla mb-2 cursor" onclick="comprar(rosquilla)">
+                    <img src="img/Rosquilla.png" alt="rosquilla" class="mt-2">
+                    <h3>ROSQUILLA</h3>
+                    <strong>$2</strong>
+                </div>
+                <div class="duff mb-2 cursor" onclick="comprar(duff)">
+                    <img src="img/Cerveza Duff.png" alt="duff" class="mt-2">
+                    <h3>CERVEZA DUFF</h3>
+                    <strong>$5</strong>
+                </div>
+                <div class="malteada mb-2 cursor" onclick="comprar(malteada)">
+                    <img src="img/Malteada.png" alt="malteada" class="mt-2">
+                        <h3>MALTEADA</h3>
+                    <strong>$3.5</strong>
+                </div>
+                <div class="krustyOs mb-2 cursor" onclick="comprar(krustyOs)">
+                    <img src="img/Krusty Os.png" alt="krusty os" class="mt-2">
+                    <h3>KRUSTY OS</h3>
+                    <strong>$3</strong>
+                </div>
+                <div class="salchicha mb-2 cursor" onclick="comprar(salchicha)">
+                    <img src="img/Salchicha.png" alt="salchicha" class="mt-2">
+                    <h3>SALCHICHA (de dudosa procedencia)</h3>
+                    <strong>$2.5</strong>
+                </div>
+                <div class="m320 mb-2 cursor" onclick="comprar(m320)">
+                    <img src="img/M-320.png" alt="m-320" class="mt-2">
+                    <h3>M-320</h3>
+                    <strong>$7.5</strong>
+                </div>
+            </div>
+        </div>
+        <div class="bolsaCompras mb-2">
+            <h2 class="mt-2">Bolsas de compras</h2>
+            <h3>Para devolver un productos solos debes tocarlos.</h3>
+            <div id="bolsa" class="contenedorCompras"></div>
+        </div>
+        <h2 class="mb-2">Total gastados: $<span id="dinero"></span></h2>
+        <script src="js/app.js"></script>
+    </div>
+</body>
+</html>

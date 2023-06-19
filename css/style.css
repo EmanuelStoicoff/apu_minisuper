@@ -1,0 +1,56 @@
+/* #e62e3a */
+*{
+    margin: 0;
+	padding: 0;
+}
+.mb-2{
+    margin-bottom: 20px;
+}
+.mt-2{
+    margin-top: 20px;
+}
+.mt-1{
+    margin-top: 1px;
+}
+body{
+    background-color: #a8cedc;
+}
+.container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.cursor{
+    cursor:grab;
+}
+.gridProductos div:hover{
+    background-color: #8eafbc;
+}
+.gridProductos{
+    display: grid;
+    grid-template-areas: 
+    "rosquilla duff malteada"
+    "krustyOs salchicha m320";
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto;
+}
+.rosquilla{grid-area: rosquilla;}
+.duff{grid-area: duff;}
+.malteada{grid-area: malteada;}
+.krustyOs{grid-area: krustyOs;}
+.salchicha{grid-area: salchicha;}
+.m320{grid-area: m320;}
+
+.bolsaCompras{
+    background-color: #8eafbc;
+    border-radius: 1rem;
+    padding-bottom: 2px;
+}
+.prodCompradosBg:hover{
+    background-color: #acd6e5;
+    border-radius: 5px;
+}
+.contenedorCompras{
+    display: flex;
+    justify-content:space-evenly;
+}
